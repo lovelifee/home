@@ -1,0 +1,15 @@
+.test-class {
+    color: rgb(47, 168, 31);
+    font-weight: 900;
+    font-style: italic;
+    }
+.test-class2 {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-style: Times;
+ }
+.test-class3 {
+    color: rgb(72, 11, 100);
+    font-weight: bold;
+    font-style: italic;
+    }
