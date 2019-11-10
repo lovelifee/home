@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+Creating a chart
+To create a chart, we need to instantiate the Chart class. To do this, we need
+to pass in the 2d context of where we want to draw the chart. Here's an
+example.
+<canvas id="myChart" width="400" height="400"></canvas>
+ var ctx = document.getElementById("myChart").getContext("2d");
+var myNewChart = new Chart(ctx).PolarArea(data);
+var ctx = $("#myChart").get(0).getContext("2d");
+var myNewChart = new Chart(ctx);

@@ -1,0 +1,42 @@
+.main-box{
+    width:530px;
+    height:50px;
+    margin-bottom:25px;
+    border-bottom:4px solid rgba(156, 149, 149, 0.877);
+}
+.button1,
+.button2,
+.button3,
+.button4,
+.button5,
+.button6,
+.button7,
+.button8,
+.button9,
+.button10{
+float:left;
+width:30px;
+height:47px;
+margin:0px 9px;
+text-align:center;
+font-size:25px;
+padding-top:3px;
+}
+.button1{
+    margin-left:30px;
+}
+.buttons a{
+    color:rgb(7, 107, 107);
+}
+.button4{
+    border-bottom:4px solid orangered;
+    }
+.current{
+width:30px;
+height:32px;
+color:white;
+background-color:orangered;
+}
+.button4>a{
+text-decoration:none;
+}

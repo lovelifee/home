@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+        @font-face {
+            font-family: "my font face";
+            src: local("Amatic SC Regular"), local("AmaticSC-Regular"), url(https://fonts.gstatic.com/s/amaticsc/v13/TUZyzwprpvBS1izr_vOEDuSfQZQ.woff2) format("woff2");
+        }
+
+        h1 {
+            font-family: "Pacifico", cursive;
+        }
+.archive {
+  height: 100%;
+  background-color: #1abc9c;
+}
+
+  .archive .label {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 0;
+  }
+
+.month {
+    padding: 0px 15px;
+    width: 100%;
+    background: #000;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 0px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 0px;
+}
+
+.days {
+    padding: 10px 0;
+    background: #bbb;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+</style>
+</head>
+<body>
+
+<div class='archive'>
+  <h1 class='label'>Архив</h1>
+</div>
+<div class="month">
+  <ul>
+    <li class="prev">❮</li>
+    <li class="next">❯</li>
+    <li>
+     <span style="font-size:18px"> декабрь 2014</span>
+    </li>
+  </ul>
+</div>
+
+
+
+<ul class="days">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li><span class="active">4</span></li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+</body>
+</html>

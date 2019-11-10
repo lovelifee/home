@@ -1,0 +1,48 @@
+.sale-block{
+    width:540px;
+    height:110px;
+    border:1px solid black;
+
+}
+.block1{
+    float:left;
+    font-size:20px;
+    height:40px;
+    width:300px;
+    font-family:Arial, sans-serif;
+    font-weight: 600;
+    padding-left:15px;
+    padding-top:15px;
+}
+.block2{
+    float:left;
+    font-size:22px;
+    font-family:Arial, sans-serif;
+    font-weight: 700;
+    width:364px;
+    height:100px;
+    padding-left:65px;
+    color:red;
+}
+.clock{
+    text-align:left;
+    width:5px;
+    height:5px;
+    margin-left:15px;
+
+}
+.block3{
+    float:right;
+    box-sizing:border-box;
+    font-size:20px;
+    height:95px;
+    width:136px;
+    font-family:Arial, sans-serif;
+    font-weight: 600;
+   margin-top:-150px;
+   margin-right:13px;
+   padding:13px;
+   border:1px dashed red;
+   border-radius:5%;
+   text-align:center;
+}
