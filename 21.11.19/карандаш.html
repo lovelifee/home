@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>КАРАНДАШ</title>
+    <style>
+    .pencil{  
+        width:100%;
+        height:200px; 
+    }
+    .pencil-body{
+        float:left;
+        width:85%;
+        height:120px;
+        background:linear-gradient(to top, #FFFF00,  #FFFF00 40px,  #CCCC00 40px,  #CCCC00 80px,  #FFFF00  80px,  #FFFF00  120px);
+    }
+    .pencil-head{
+        float:left;
+        width:10%;
+    }
+    .tip-container-1{
+        float:left;
+         margin-top:10px;
+      margin-left:-45px;
+      width:20%;
+      height:120px;
+    }
+    .tip-1{
+      float:left;
+      width: 0;
+      height: 0;
+      border-left: 75px dashed transparent;
+      border-right: 75px dashed transparent;
+      border-top: 100px dashed #A52A2A;
+      border-radius: 50%;
+      transform: rotate(-90deg);
+    }
+    .tip-container-2{
+        float:left;
+        margin-top:35px;
+        margin-left:22px;
+    }
+    .tip-2{
+        float:left;
+      width: 0;
+      height: 0;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      border-top: 50px solid black;
+      border-radius: 50%;
+      transform: rotate(-90deg);  
+    }
+    </style>
+</head>
+<body>
+    <div class="pencil"> 
+        <div class="pencil-body"></div>
+        <div class="pencil-head">
+            <div class="tip-container-1">
+                    <div class="tip-1"></div>
+            </div>
+            <div class="tip-container-2">
+                    <div class="tip-2"></div>
+            </div>
+        </div>
+</body>
+</html>
