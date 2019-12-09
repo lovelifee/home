@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .odd {
+        background: linear-gradient(
+          to bottom,
+          white,
+          white 12.5%,
+          black 12.5%,
+          black 25%,
+          white 25%,
+          white 37.5%,
+          black 37.5%,
+          black 50%,
+          white 50%,
+          white 62.5%,
+          black 62.5%,
+          black 75%,
+          white 75%,
+          white 87.5%,
+          black 87.5%,
+          black 100%
+        );
+        height: 100vmin;
+        width: 12.5vmin;
+      }
+​
+      .even {
+        background: linear-gradient(
+          to top,
+          white,
+          white 12.5%,
+          black 12.5%,
+          black 25%,
+          white 25%,
+          white 37.5%,
+          black 37.5%,
+          black 50%,
+          white 50%,
+          white 62.5%,
+          black 62.5%,
+          black 75%,
+          white 75%,
+          white 87.5%,
+          black 87.5%,
+          black 100%
+        );
+        height: 100vmin;
+        width: 12.5vmin;
+      }
+      .float {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="odd"></div>
+    <div class="even"></div>
+    <div class="odd"></div>
+    <div class="even"></div>
+    <div class="odd"></div>
+    <div class="even"></div>
+    <div class="odd"></div>
+    <div class="even"></div>
+    <script>
+      var bodyWidth = document.body.clientWidth;
+      var divWidth = document.querySelector("div").clientWidth;
+      alert(`Ширина body = ${bodyWidth}`);
+      alert(
+        `Ширина div = ${divWidth} чтобы div поместились в body ширина каждого должна быть ${bodyWidth /
+          8}`
+      );
+      alert("Нажмите OK, чтобы применить float: left блокам");
+      var d = document.querySelectorAll("div");
+      for (var i = 0; i < d.length - 1; i++) {
+        d[i].classList.add("float");
+      }
+      alert(
+        "Последний блок не помещается, потому что ширина блоков чуть больше, чем нужно из-за вертикального скролла в body"
+      );
+    </script>
+  </body>
+</html>

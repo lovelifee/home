@@ -1,0 +1,119 @@
+	body,ul {
+		margin: 0;
+	}
+
+	header {
+		background-color: coral;
+		position: relative;
+		min-height: 120px;
+		min-width: 480px;
+	}
+
+	header>div {
+		background-color: orange;
+		height: 80px;
+		width: 200px;
+		top: 20px;
+		left: 20px;
+		position: absolute;
+	}
+
+	header>ul>li {
+		display: inline-block;
+		position: relative;
+	}
+
+	header>ul>li>ul {
+		display: none;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		background-color: rgb(204, 0, 204);
+	}
+
+	header>ul>:hover:nth-child(3)>ul {
+		display: block;
+	}
+
+	header>ul>li>ul>li {
+		min-width: 150px;
+		margin-left: -40px;
+	}
+
+	header>ul>li:last-child::after {
+		display: inline;
+		content: "\25bc";
+	}
+
+	footer {
+		background-color: rgb(124, 252, 0);
+		text-align: center;
+		min-width: 120px;
+		min-height: 120px;
+		line-height: 120px;
+	}
+
+	main {
+		min-height: 400px;
+		border-left: 250px solid hotpink;
+		min-width: 230px;
+	}
+
+	aside {
+		position: absolute;
+	}
+
+	header>ul {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+	}
+
+	aside li,
+	aside label {
+		color: blue;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	aside ul {
+		list-style: none;
+		padding-inline-start: 0;
+	}
+
+	aside input {
+		display: none;
+	}
+
+	#kozha~ul,
+	#roga~ul,
+	#kopyta~ul {
+		display: none;
+	}
+
+	#kozha:checked~ul,
+	#roga:checked~ul,
+	#kopyta:checked~ul {
+		display: block;
+	}
+
+	aside>ul>li>label::after {
+		content: "\25b6";
+		display: inline;
+		color: black;
+		position: absolute;
+		left: 238px;
+    
+	}
+    aside label{
+        display: block;
+    }
+    #roga~ul,#kopyta~ul,#kozha~ul{
+        min-width: 200px;
+        left:250px;
+        background-color:gray;
+        position: absolute;
+    }
+    aside>ul>li{
+        position: relative;;
+    }
